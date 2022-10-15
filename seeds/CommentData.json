@@ -1,12 +1,21 @@
 [
     {
-      "comment": "Interesting!"
+      "id": 1,  
+      "comment": "Interesting!",
+      "post_id": 2,
+      "user_id": 3
     },
     {
-      "comment": "Best of luck!"
+      "id": 2, 
+      "comment": "Best of luck!",
+      "post_id": 3,
+      "user_id": 1
     },
     {
-      "comment": "Love this post"
+      "id": 3, 
+      "comment": "Love this post",
+      "post_id": 1,
+      "user_id": 2
     }
   ]
   
