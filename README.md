@@ -1,5 +1,13 @@
 # tech-blog
 
+When writing about tech, I want a CMS style blog site so that I can publish articles, blog posts, thoughts and opinions and my friends or collegues can respond back with their thoughts. 
+
+## Table of Contents:
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies Used](#technologies-used)
+- [Demo](#demo)
+- [Links](#links)
+- [Questions](#questions)
 
 
 ## Acceptance Criteria 
@@ -32,3 +40,13 @@
 - express-handlebars
 - mysql2  
 - deployed using Heroku
+
+## Demo
+
+
+## Links
+- GitHub Repo: https://github.com/mals1230/tech-blog
+- Deployed Site: https://quiet-escarpment-58479.herokuapp.com/
+
+## Questions:
+Have questions about this project? Feel free to go the the project's repo and post an issue
