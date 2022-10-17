@@ -1,7 +1,7 @@
 async function editFormHandler(event) {
     event.preventDefault();
 
-    const userComment = document.querySelector('#comment-form').value;
+    const userComment = document.querySelector('#post-comment').value;
     
     const id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
@@ -25,4 +25,4 @@ async function editFormHandler(event) {
     }
   }
   
-  document.querySelector('.new-post-form').addEventListener('submit', editFormHandler);
+  document.querySelector('.comment-form').addEventListener('submit', editFormHandler);

@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { Post, User } = require('../models');
+const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
+    // Get all posts and JOIN with user data
     const postData = await Post.findAll({
       include: [
         {
@@ -31,11 +31,9 @@ router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+        {model: User, attributes: {exclude: ['password', 'email']}},
+        {model: Comment, include: [{model: User}]},
+      ]
     });
 
     const post = postData.get({ plain: true });
@@ -56,6 +54,7 @@ router.get('/profile', withAuth, async (req, res) => {
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Post }],
+
     });
 
     const user = userData.get({ plain: true });

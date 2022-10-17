@@ -7,14 +7,14 @@
     <h3>Comments:</h3>
     {{#each comments as |comment|}}
     <span class="comments">{{comment.userComment}}</span>
-    <p> Posted by {{comment.user.name}} on {{format_date Post.date_created}}</p>
+    <p> Posted by {{comment.user.name}} on {{format_date comment.date_created}}</p>
     {{/each}}
   </p>
 
-    <form class="form new-post-form">
+    <form class="form comment-form">
       <div class="form-group">
-        <label for="comment-form">Add a Comment:</label>
-        <input class="form-input" type="text" id="#comment-form" name="#comment" />
+        <label for="comment">Add a Comment:</label>
+        <input class="form-input" id="#post-comment" name="comment" />
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Submit</button>
