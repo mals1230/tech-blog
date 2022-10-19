@@ -9,7 +9,6 @@ When writing about tech, I want a CMS style blog site so that I can publish arti
 - [Links](#links)
 - [Questions](#questions)
 
-
 ## Acceptance Criteria 
 - GIVEN a CMS-style blog site
 - WHEN I visit the site for the first time, THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
@@ -42,11 +41,14 @@ When writing about tech, I want a CMS style blog site so that I can publish arti
 - deployed using Heroku
 
 ## Demo
-
+<img src="./images/homepage.png" alt="Screenshot of Homepage">
+<img src="./images/login.png" alt="Screenshot of Log-in/Sign Up page">
+<img src="./images/Profile.png" alt="Screenshot of Profile page">
+<img src="./images/Post.png" alt="Screenshot of Post page">
 
 ## Links
 - GitHub Repo: https://github.com/mals1230/tech-blog
 - Deployed Site: https://quiet-escarpment-58479.herokuapp.com/
 
 ## Questions:
-Have questions about this project? Feel free to go the the project's repo and post an issue
+Have questions about this project? Feel free to go to the project's repo and post an issue

@@ -5,7 +5,7 @@ const newFormHandler = async (event) => {
   const description = document.querySelector('#post-desc').value.trim();
 
   if (title && description) {
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/post/newpost`, {
       method: 'POST',
       body: JSON.stringify({ title, description }),
       headers: {
@@ -14,7 +14,7 @@ const newFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/');
     } else {
       alert('Failed to add blog post');
     }
@@ -41,6 +41,6 @@ document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
 
-document
-  .querySelector('.post-list')
-  .addEventListener('click', delButtonHandler);
+// document
+//   .querySelector('.post-list')
+//   .addEventListener('click', delButtonHandler);
