@@ -41,8 +41,8 @@ When writing about tech, I want a CMS style blog site so that I can publish arti
 - deployed using Heroku
 
 ## Demo
-<img src="./images/homepage.png" alt="Screenshot of Homepage">
-<img src="./images/login.png" alt="Screenshot of Log-in/Sign Up page">
+<img src="./images/Homepage.png" alt="Screenshot of Homepage">
+<img src="./images/Login.png" alt="Screenshot of Log-in/Sign Up page">
 <img src="./images/Profile.png" alt="Screenshot of Profile page">
 <img src="./images/Post.png" alt="Screenshot of Post page">
 
